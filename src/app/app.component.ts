@@ -110,11 +110,9 @@ export class AppComponent {
     }
   ];
 
- ngOnInit() {  
+  ngOnInit() {  
     this.getView();
-    window.onresize = () => {
-    this.getView();
-    }; 
+    window.onresize = () => this.getView(); 
   }
   
   getView() {   
